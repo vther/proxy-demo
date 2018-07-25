@@ -9,8 +9,9 @@ public class AutoProxyMain {
         String configPath = "com/vther/proxy/demo/autoproxy/beans.xml";
         ApplicationContext ctx = new ClassPathXmlApplicationContext(configPath);
         Waiter waiter = (Waiter) ctx.getBean("waiter");
-        waiter.serveTo("John");
-        waiter.greetTo("John");
+//        waiter.serveTo("John");
+        waiter.greet2To("John");
+//        waiter.greetTo("John");
         //seller.greetTo("Tom");
     }
 }
