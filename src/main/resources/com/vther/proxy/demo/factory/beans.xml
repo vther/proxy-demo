@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="target" class="com.vther.proxy.demo._00_common.service.impl.OrderServiceImpl"/>
+
+    <bean id="advice" class="com.vther.proxy.demo._04_spring_aop._41_advice.LogMethodAdvice"/>
+    <bean id="orderService" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="interceptorNames" value="advice"/>
+        <property name="target" ref="target"/>
+    </bean>
+
+</beans>
