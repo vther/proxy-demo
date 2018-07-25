@@ -5,7 +5,7 @@ import com.vther.proxy.demo._00_common.service.OrderService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class Application {
+public class ProxyFactoryBeanMain {
 
     public static void main(String[] args) {
 

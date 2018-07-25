@@ -6,7 +6,7 @@ import com.vther.proxy.demo._00_common.service.impl.OrderServiceImpl;
 
 import java.lang.reflect.Proxy;
 
-public class APP {
+public class JDKMain {
     public static void main(String[] args) {
         System.out.println("----------------------------------------------------");
         OrderService target = new OrderServiceImpl();

@@ -6,7 +6,7 @@ import com.vther.proxy.demo._00_common.service.impl.OrderServiceImpl;
 import org.springframework.aop.BeforeAdvice;
 import org.springframework.aop.framework.ProxyFactory;
 
-public class APP {
+public class AdviceMain {
     public static void main(String[] args) {
         _41_advice();
 

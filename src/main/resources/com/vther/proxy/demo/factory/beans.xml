@@ -7,6 +7,7 @@
     <bean id="target" class="com.vther.proxy.demo._00_common.service.impl.OrderServiceImpl"/>
 
     <bean id="advice" class="com.vther.proxy.demo._04_spring_aop._41_advice.LogMethodAdvice"/>
+    
     <bean id="orderService" class="org.springframework.aop.framework.ProxyFactoryBean">
         <property name="interceptorNames" value="advice"/>
         <property name="target" ref="target"/>
